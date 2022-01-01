@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote name="nyannmu"
+           fetch="https://github.com/nyannmu"/>
+
+<!-- Kernels -->
+   <project path="kernel/xiaomi/sdm845" 
+            name="android_kernel_xiaomi_sdm845"
+            remote="nyannmu" 
+            revision="lineage-18.1"  
+            clone-depth="1"/>
+
+<!-- Device Tree and Common Device Tree -->
+   <project path="device/xiaomi/perseus" 
+            name="a12_perseus_tree" 
+            remote="nyannmu" 
+            revision="pex-tree"/>
+   
+   <project path="device/xiaomi/sdm845-common" 
+            name="a12_perseus_tree" 
+            remote="nyannmu" 
+            revision="pex-common"/>
+  
+<!-- Vendor Trees and Common Vendor Tree -->
+   <project path="vendor/xiaomi" 
+            name="proprietary_vendor_xiaomi" 
+            remote="nyannmu"
+            revision="a12"/>   
+   
+</manifest>
